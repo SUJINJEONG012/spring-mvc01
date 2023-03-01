@@ -27,7 +27,7 @@ public class MemberController {
 		int saveResult = memberService.save(memberDTO);
 		
 		if (saveResult > 0) {
-			return "login";
+			return "/member/login";
 		} else {
 			return "/member/save";
 		}

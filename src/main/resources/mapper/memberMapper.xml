@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 
+parameterType은 풀 네임으로 패키지명으로적어주는게 맞는데, 
+mybatis-config에 설정을 해서 풀경로를 안적어줘도 괜찮다. 
+ -->
+ 
+<mapper namespace="Member">
+	
+	<insert id="save" parameterType="member">
+        insert into member_table(memberEmail, memberPassword, memberName, memberAge, memberMobile)
+        values (#{memberEmail}, #{memberPassword}, #{memberName}, #{memberAge}, #{memberMobile})
+    </insert>
+    
+    
+    
+</mapper>       

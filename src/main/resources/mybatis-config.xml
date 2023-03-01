@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  
+
+<!-- spring.mvc.dto.MemeberDTO  이름을  member 이름을 사용하겠다 라고 설정 -->
+<configuration>
+    <typeAliases>
+        <typeAlias type="spring.mvc.dto.MemberDTO" alias="member"></typeAlias>
+    </typeAliases>
+</configuration>
+
+  
+        
+        
