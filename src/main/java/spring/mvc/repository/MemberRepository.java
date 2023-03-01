@@ -18,4 +18,8 @@ public class MemberRepository {
 		//memberMapper에 "Member.save" 있는 네임스페이스랑 id랑넣어주면 된다. 
 		return sql.insert("Member.save", memberDTO);
 	}
+	
+	public MemberDTO login(MemberDTO memberDTO) {
+		return sql.selectOne("Member.login", memberDTO);
+	}
 }
