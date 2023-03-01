@@ -7,7 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-인덱스 부분
+ 
+ <h2>Hello Spring Framework 회원 프로젝트</h2>
+ <a href="/member/save">회원가입</a>
+ <a href="/member/login">로그인</a>
+ <a href="/member/">회원목록조회</a>
 </body>
 </html>
