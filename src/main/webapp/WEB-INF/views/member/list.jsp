@@ -24,7 +24,7 @@
 		<c:forEach items="${memberList}" var="member">
 			<tr>
 				<td>${member.id}</td>
-				<td>${member.memberEmail}</td>
+				<td><a href="/member?id=${member.id}"> ${member.memberEmail}</a></td>
 				<td>${member.memberPassword}</td>
 				<td>${member.memberName }</td>
 				<td>${member.memberAge }</td>
