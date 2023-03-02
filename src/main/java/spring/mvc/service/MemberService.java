@@ -1,5 +1,7 @@
 package spring.mvc.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import lombok.RequiredArgsConstructor;
@@ -24,5 +26,9 @@ public class MemberService {
 			return false;
 		}
 		
+	}
+
+	public List<MemberDTO> findAll() {
+		return memberRepository.findAll();
 	}
 }

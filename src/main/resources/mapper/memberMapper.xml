@@ -18,5 +18,8 @@
 		select * from member_table where memberEmail = #{memberEmail} and
 		memberPassword = #{memberPassword}
 	</select>
+	
+	
+	
 
 </mapper>       
