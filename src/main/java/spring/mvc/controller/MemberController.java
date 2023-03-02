@@ -82,6 +82,18 @@ public class MemberController {
 		}
 	
 	
+	//수정화면 요청
+	@GetMapping("/update")
+	public String updateForm(HttpSession session , Model model) {
+		//세션에 저장된 나의 이메일 가져오기
+		String loginEmail = (String) session.getAttribute("loginEmail");
+		//System.out.println("@@@@@@@ loginEmail ::::::" + loginEmail);
+		MemberDTO memberDTO = memberService.findByMemberEmail(loginEmail);
+		model.addAttribute("member", memberDTO);
+		//System.out.println("@@@@@@@ memberDTO ::::::" + memberDTO);
+		return "/member/update";
+	}
+	
 	
 	
 	

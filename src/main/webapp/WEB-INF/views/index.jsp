@@ -22,9 +22,9 @@
 const update = () => {
 	location.href="/member/update";
 }
-const logout = () => {
+/* const logout = () => {
 	location.href="/member/logout";
-}
+} */
 </script>
 </body>
 

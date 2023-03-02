@@ -12,7 +12,7 @@
  <input type="text" name="memberEmail" placeholder="이메일">
  <input type="text" name="memberPassword" placeholder="비밀번호">
  <input type="text" name="memberName" placeholder="이름">
- <input type="text" name="memberAge" placeholder="나">
+ <input type="text" name="memberAge" placeholder="나이">
  <input type="text" name="memberMobile" placeholder="전화번호">
  <input type="submit" value="회원 가입">
 </form>
