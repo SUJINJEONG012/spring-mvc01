@@ -95,6 +95,19 @@ public class MemberController {
 	}
 	
 	
+	//수정처리
+	@PostMapping("/update")
+	public String update(@ModelAttribute MemberDTO memberDTO) {
+		boolean result = memberService.update(memberDTO);
+		if(result) {
+			//어떤회원이수정을 했는지 알기위해서 아이디값으로
+			return "redirect:/member?id=" + memberDTO.getId();
+		}else {
+			return "index";
+		}
+	}
+	
+	
 	
 	
 }
