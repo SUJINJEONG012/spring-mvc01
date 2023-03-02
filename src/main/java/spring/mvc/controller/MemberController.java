@@ -62,7 +62,7 @@ public class MemberController {
 	public String findAll(Model model) {
 		List<MemberDTO> memberDTOList = memberService.findAll();
 		model.addAttribute("memberList", memberDTOList);
-		return "list";
+		return "/member/list";
 	}
 	
 	
