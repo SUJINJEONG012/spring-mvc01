@@ -30,10 +30,17 @@
 				<td>${member.memberAge }</td>
 				<td>${member.memberMobile}</td>
 				<td><a href="/member?id=${member.id}">조회</a></td>
-				<td><button oncclick="deleteMember('${member.id}')">삭제</button></td>
+				<td><button onclick="deleteMember('${member.id}')">삭제</button></td>
 			</tr>
 		</c:forEach>
-		
 	</table>
+	
+	<script>
+	const deleteMember = (id) => {
+		console.log(id);
+		location.href="/member/delete?id=" + id;
+	}
+	</script>
+	
 </body>
 </html>

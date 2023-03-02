@@ -32,5 +32,9 @@ mybatis-config에 설정을 해서 풀경로를 안적어줘도 괜찮다.
 	<select id="findById" parameterType="Long" resultType="member">
 	select * from member_table where id = #{id}
 	</select>
+	
+	<delete id="delete" parameterType="Long">
+	 delete from member_table where id= #{id}
+	</delete>
 
 </mapper>       
