@@ -55,4 +55,15 @@ public class MemberService {
 		}
 		
 	}
+
+	public String emailCheck(String memberEmail) {
+		MemberDTO memberDTO = memberRepository.findByMemberEmail(memberEmail);
+		if(memberDTO == null) {
+			return "ok";
+		}else {
+			return "no";
+		}	
+	}
+	
+	
 }

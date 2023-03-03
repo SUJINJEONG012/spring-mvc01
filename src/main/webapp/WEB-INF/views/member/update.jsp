@@ -9,7 +9,6 @@
 <body>
 
 	<form action="/member/update" method="POST" name="updateForm">
-	
 	id : <input type="text" name="id" value="${member.id}" readonly>
 	email : <input type="text" name="memberEmail" value="${member.memberEmail}" readonly >
 	password : <input type="text" name="memberPassword" id="memberPassword" value="${member.memberPassword}"  >
@@ -19,9 +18,9 @@
 
 	<input type="button" value="수정" onclick="update()">
 	</form>
-	
+
 	<script>
-	
+
 	 const update = () => {
 	 const passwordDB = '${member.memberPassword}' ;
 	 //사용자가입력한 비밀번호가 일치하다면 
